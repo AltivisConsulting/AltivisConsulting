@@ -65,7 +65,13 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
-
+.first-service {
+    width: 100%;
+    max-width: 100%;
+}
+.first-service p {
+    max-width: 100%;
+}
 a {
   color: var(--accent-color);
   text-decoration: none;
