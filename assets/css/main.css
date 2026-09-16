@@ -60,6 +60,67 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+body.index-page {
+  position: relative;
+}
+
+body.index-page #header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background: transparent !important;
+}
+
+#hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 80px;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1,
+#hero p {
+  color: white;
+}
+
+#header .navmenu a {
+  color: white;
+}
+
+#header .navmenu a:hover,
+#header .navmenu a.active {
+  color: #3498db;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
